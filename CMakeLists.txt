@@ -40,3 +40,4 @@ set(FREERTOS_PORT_DIRECTORY ${BOARD_DEMO_FREERTOS_PORT_PATH} CACHE STRING "FreeR
 
 # Add middleware
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs/azure-iot-middleware-freertos)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/libs/libwebsockets)
