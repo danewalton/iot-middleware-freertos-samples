@@ -6,6 +6,14 @@ if(NOT VENDOR MATCHES "^PC$")
     set(CMAKE_TOOLCHAIN_FILE cmake/${VENDOR}_gcc.cmake)
 endif()
 
+set(LWS_WITH_SSL 1)
+set(LWS_WITH_MBEDTLS 1)
+set(MBEDTLS_INCLUDE_DIRS "/home/dwalton/repos/mbedtls/include")
+set(LWS_MBEDTLS_INCLUDE_DIRS "/home/dwalton/repos/mbedtls/include")
+set(MBEDCRYPTO_LIBRARY "/home/dwalton/repos/mbedtls/build/library/libmbedcrypto.a")
+set(MBEDTLS_LIBRARY "/home/dwalton/repos/mbedtls/build/library/libmbedtls.a")
+set(MBEDX509_LIBRARY "/home/dwalton/repos/mbedtls/build/library/libmbedx509.a")
+
 project(iot-middleware-sample C ASM)
 set(CMAKE_INCLUDE_CURRENT_DIR TRUE)
 
